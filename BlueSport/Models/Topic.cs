@@ -7,5 +7,6 @@ namespace BlueSport.Models
 {
     public class Topic : BaseModel
     {
+        public List<Contact> contacts { get; set; }
     }
 }

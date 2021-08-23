@@ -9,7 +9,7 @@ namespace BlueSport.Models
     {
         public string id { get; set; }
         public string productId { get; set; }
-        public Dictionary<string, string> detail { get; set; }
+        public string detail { get; set; }
         public Product product { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace BlueSport.Models
         public int level { get; set; }
         public string parentId { get; set; }
         public string slug { get; set; }
+        public List<ProductMapCate> productMapCates { get; set; }
     }
 }

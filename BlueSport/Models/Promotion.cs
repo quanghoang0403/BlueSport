@@ -9,5 +9,6 @@ namespace BlueSport.Models
     {
         public string productId { get; set; }
         public Product product { get; set; }
+        public List<PromotionDetail> promotionDetails { get; set; }
     }
 }

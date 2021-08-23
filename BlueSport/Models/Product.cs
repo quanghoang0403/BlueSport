@@ -16,5 +16,10 @@ namespace BlueSport.Models
         public bool isSoldOut { get; set; }
         public int installment { get; set; }
         public Brand brand { get; set; }
+        public List<Promotion> promotions { get; set; }
+        public List<ProductImage> productImages { get; set; }
+        public List<ProductDetail> productDetails { get; set; }
+        public List<ProductMapSize> productMapSizes { get; set; }
+        public List<ProductMapCate> productMapCates { get; set; }
     }
 }

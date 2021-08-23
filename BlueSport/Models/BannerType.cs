@@ -7,5 +7,6 @@ namespace BlueSport.Models
 {
     public class BannerType : BaseModel
     {
+        public List<Banner> banners { get; set; }
     }
 }

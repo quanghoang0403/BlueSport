@@ -7,5 +7,7 @@ namespace BlueSport.Models
 {
     public class Size : BaseModel
     {
+        public List<ProductMapSize> productMapSizes { get; set; }
+        public List<SizeMapColor> sizeMapColors { get; set; }
     }
 }

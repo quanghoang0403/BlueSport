@@ -7,11 +7,11 @@ namespace BlueSport.Models
 {
     public class OrderDetail
     {
-        public string id { get; set; }
-        public string orderId { get; set; }
-        public string productId { get; set; }
-        public int quantity { get; set; }
-        public Order order { get; set; }
-        public Product product { get; set; }
+        //public string id { get; set; }
+        //public string orderId { get; set; }
+        //public string productId { get; set; }
+        //public int quantity { get; set; }
+        //public Order order { get; set; }
+        //public Product product { get; set; }
     }
 }

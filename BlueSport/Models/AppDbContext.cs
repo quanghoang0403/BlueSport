@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BlueSport.Configurations;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,25 @@ namespace BlueSport.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new BannerConfig());
+            modelBuilder.ApplyConfiguration(new BannerTypeConfig());
+            modelBuilder.ApplyConfiguration(new BrandConfig());
+            modelBuilder.ApplyConfiguration(new CategoryConfig());
+            modelBuilder.ApplyConfiguration(new ColorConfig());
+            modelBuilder.ApplyConfiguration(new ContactConfig());
+            //modelBuilder.ApplyConfiguration(new OrderConfig());
+            //modelBuilder.ApplyConfiguration(new OrderDetailConfig());
+            modelBuilder.ApplyConfiguration(new ProductConfig());
+            modelBuilder.ApplyConfiguration(new ProductDetailConfig());
+            modelBuilder.ApplyConfiguration(new ProductImageConfig());
+            modelBuilder.ApplyConfiguration(new ProductMapCateConfig());
+            modelBuilder.ApplyConfiguration(new ProductMapSizeConfig());
+            modelBuilder.ApplyConfiguration(new PromotionConfig());
+            modelBuilder.ApplyConfiguration(new PromotionDetailConfig());
+            modelBuilder.ApplyConfiguration(new SizeConfig());
+            modelBuilder.ApplyConfiguration(new SizeMapColorConfig());
+            modelBuilder.ApplyConfiguration(new TopicConfig());
+            //base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Banner> Banners { get; set; }
@@ -23,8 +42,8 @@ namespace BlueSport.Models
         public DbSet<Category> Categories { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
+        //public DbSet<Order> Orders { get; set; }
+        //public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductDetail> ProductDetails { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }

@@ -7,7 +7,7 @@ namespace BlueSport.Models
 {
     public class Order
     {
-        public string id { get; set; }
-        public string session { get; set; }
+        //public string id { get; set; }
+        //public string session { get; set; }
     }
 }

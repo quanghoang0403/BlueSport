@@ -9,5 +9,6 @@ namespace BlueSport.Models
     {
         public string info { get; set; }
         public string img { get; set; }
+        public List<Product> products { get; set; }
     }
 }
